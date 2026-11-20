@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-11-20T09:37:01+01:00",
+  "timestamp_utc": "2026-11-20T08:37:01+00:00",
+  "runtime_seconds": 5.94,
+  "collapse_subdomains": false,
+  "sources": {
+    "oisd": {
+      "id": "oisd",
+      "name": "OISD Big",
+      "url": "https://big.oisd.nl",
+      "kind": "adblock",
+      "http_status": 200,
+      "raw_bytes": 5112333,
+      "raw_lines": 227047,
+      "valid_domains": 227035,
+      "internal_duplicates": 0
+    },
+    "hagezi": {
+      "id": "hagezi",
+      "name": "HaGeZi Pro",
+      "url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt",
+      "kind": "adblock",
+      "http_status": 200,
+      "raw_bytes": 5625299,
+      "raw_lines": 243516,
+      "valid_domains": 243502,
+      "internal_duplicates": 0
+    },
+    "stevenblack": {
+      "id": "stevenblack",
+      "name": "Steven Black Hosts",
+      "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+      "kind": "hosts",
+      "http_status": 200,
+      "raw_bytes": 2328985,
+      "raw_lines": 82923,
+      "valid_domains": 76102,
+      "internal_duplicates": 0
+    }
+  },
+  "union_mentions": 546639,
+  "unique_after_dedupe": 424054,
+  "duplicates": 122585,
+  "overlap": {
+    "oisd_and_hagezi": 95103,
+    "oisd_and_stevenblack": 19482,
+    "hagezi_and_stevenblack": 25928,
+    "all_three": 17928,
+    "only_oisd": 130378,
+    "only_hagezi": 140399,
+    "only_stevenblack": 48620,
+    "domains_in_several_sources": 104657
+  },
+  "allowlist_file": "allowlist.txt",
+  "allowlist_entries": 0,
+  "allowlist_removed": 0,
+  "collapsed_subdomains": 0,
+  "total": 424054,
+  "output_file": "blocklist.txt",
+  "output_bytes": 8614453
+}

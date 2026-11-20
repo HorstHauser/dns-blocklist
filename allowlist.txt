@@ -1,0 +1,12 @@
+# Ausnahmen von der zusammengeführten DNS-Sperrliste.
+# Eine Domain pro Zeile; Zeilen mit # sind Kommentare.
+# Eine hier eingetragene Domain wird mitsamt ihrer Subdomains
+# nicht in blocklist.txt übernommen.
+#
+# Hinweis: Wenn eine Elterndomain weiterhin in der Liste steht und der
+# DNS-Filter der FRITZ!Box Subdomains mitsperrt, greift diese Datei allein
+# nicht. Dann zusätzlich unter Heimnetz > Netzwerk > DNS-Filter eine
+# Domain-Ausnahme (erlaubt) in der Box setzen.
+#
+# Beispiel:
+# example.com
