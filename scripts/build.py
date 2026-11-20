@@ -546,13 +546,15 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Ausnahmeliste (Standard: allowlist.txt im Repo-Root)",
     )
     parser.add_argument(
-        "--collapse-subdomains",
-        action="store_true",
+        "--no-collapse-subdomains",
+        dest="collapse_subdomains",
+        action="store_false",
         help=(
-            "Subdomains entfernen, deren Elterndomain bereits gesperrt ist. "
-            "Standard: aus. Nur nutzen, wenn der Fritz-Filter Subdomains mitsperrt."
+            "Keine Subdomains entfernen, deren Elterndomain bereits gesperrt ist. "
+            "Standard: Subdomains werden zusammengefasst (FRITZ!Box sperrt Mitschnitte)."
         ),
     )
+    parser.set_defaults(collapse_subdomains=True)
     return parser.parse_args(argv)
 
 

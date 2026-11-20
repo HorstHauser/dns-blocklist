@@ -59,18 +59,21 @@ Lokal:
 python3 scripts/build.py
 ```
 
-Optional, standardmäßig aus:
+Standardmäßig werden Subdomains entfernt, deren Elterndomain bereits in
+der Liste steht (Wildcard-Domains-Format). Am FRITZ!-DNS-Filter sperrt
+eine Zeile `example.com` nachweislich auch Subdomains; ohne diesen Schritt
+zeigt die Box deutlich mehr Einträge als in `blocklist.txt` Zeilen stehen.
+Die Anzahl entfernter Subdomains steht in `stats.json` unter
+`collapsed_subdomains`.
+
+Volle, nicht zusammengefasste Liste (z. B. zum Vergleich):
 
 ```bash
-python3 scripts/build.py --collapse-subdomains
+python3 scripts/build.py --no-collapse-subdomains
 ```
 
-Das entfernt Subdomains, deren Elterndomain bereits gesperrt ist. HaGeZi
-dokumentiert, dass die FRITZ!Box das *Wildcard-Domains*-Format so
-interpretiert (eine Zeile `example.com` deckt auch Subdomains ab). AVM
-nennt das Format „wildcard domains“, bestätigt das Mitsperren aber nicht
-ausdrücklich in #4463. Deshalb bleibt die Option aus, bis das am Gerät
-geprüft wurde.
+HaGeZi beschreibt die Wildcard-Interpretation in der FAQ; AVM nennt das
+Format „wildcard domains“ in #4463.
 
 ## Hinweise
 
