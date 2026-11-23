@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-22T12:30:10+01:00",
-  "timestamp_utc": "2026-11-22T11:30:10+00:00",
-  "runtime_seconds": 10.67,
+  "timestamp": "2026-11-23T13:52:55+01:00",
+  "timestamp_utc": "2026-11-23T12:52:55+00:00",
+  "runtime_seconds": 8.129,
   "collapse_subdomains": true,
   "sources": {
     "oisd": {
@@ -10,9 +10,9 @@
       "url": "https://big.oisd.nl",
       "kind": "adblock",
       "http_status": 200,
-      "raw_bytes": 5056050,
-      "raw_lines": 224399,
-      "valid_domains": 224387,
+      "raw_bytes": 4973096,
+      "raw_lines": 220128,
+      "valid_domains": 220116,
       "internal_duplicates": 0
     },
     "hagezi": {
@@ -21,9 +21,9 @@
       "url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt",
       "kind": "adblock",
       "http_status": 200,
-      "raw_bytes": 6494638,
-      "raw_lines": 284013,
-      "valid_domains": 283999,
+      "raw_bytes": 5497532,
+      "raw_lines": 236213,
+      "valid_domains": 236199,
       "internal_duplicates": 0
     },
     "stevenblack": {
@@ -38,24 +38,24 @@
       "internal_duplicates": 0
     }
   },
-  "union_mentions": 584488,
-  "unique_after_dedupe": 427204,
-  "duplicates": 157284,
+  "union_mentions": 532417,
+  "unique_after_dedupe": 417960,
+  "duplicates": 114457,
   "overlap": {
-    "oisd_and_hagezi": 130247,
-    "oisd_and_stevenblack": 19145,
-    "hagezi_and_stevenblack": 25645,
-    "all_three": 17753,
-    "only_oisd": 92748,
-    "only_hagezi": 145860,
-    "only_stevenblack": 49065,
-    "domains_in_several_sources": 139531
+    "oisd_and_hagezi": 87470,
+    "oisd_and_stevenblack": 19134,
+    "hagezi_and_stevenblack": 24561,
+    "all_three": 16708,
+    "only_oisd": 130220,
+    "only_hagezi": 140876,
+    "only_stevenblack": 49115,
+    "domains_in_several_sources": 97749
   },
   "allowlist_file": "allowlist.txt",
   "allowlist_entries": 0,
   "allowlist_removed": 0,
-  "collapsed_subdomains": 56145,
-  "total": 371059,
+  "collapsed_subdomains": 57950,
+  "total": 360010,
   "output_file": "blocklist.txt",
-  "output_bytes": 7300511
+  "output_bytes": 7117367
 }
