@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-23T13:52:55+01:00",
-  "timestamp_utc": "2026-11-23T12:52:55+00:00",
-  "runtime_seconds": 8.129,
+  "timestamp": "2026-11-24T14:48:47+01:00",
+  "timestamp_utc": "2026-11-24T13:48:47+00:00",
+  "runtime_seconds": 7.912,
   "collapse_subdomains": true,
   "sources": {
     "oisd": {
@@ -10,9 +10,9 @@
       "url": "https://big.oisd.nl",
       "kind": "adblock",
       "http_status": 200,
-      "raw_bytes": 4973096,
-      "raw_lines": 220128,
-      "valid_domains": 220116,
+      "raw_bytes": 4994918,
+      "raw_lines": 221098,
+      "valid_domains": 221086,
       "internal_duplicates": 0
     },
     "hagezi": {
@@ -21,9 +21,9 @@
       "url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt",
       "kind": "adblock",
       "http_status": 200,
-      "raw_bytes": 5497532,
-      "raw_lines": 236213,
-      "valid_domains": 236199,
+      "raw_bytes": 5716902,
+      "raw_lines": 246140,
+      "valid_domains": 246126,
       "internal_duplicates": 0
     },
     "stevenblack": {
@@ -32,30 +32,30 @@
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
       "kind": "hosts",
       "http_status": 200,
-      "raw_bytes": 2328985,
-      "raw_lines": 82923,
-      "valid_domains": 76102,
+      "raw_bytes": 2505650,
+      "raw_lines": 88495,
+      "valid_domains": 81674,
       "internal_duplicates": 0
     }
   },
-  "union_mentions": 532417,
-  "unique_after_dedupe": 417960,
-  "duplicates": 114457,
+  "union_mentions": 548886,
+  "unique_after_dedupe": 421658,
+  "duplicates": 127228,
   "overlap": {
-    "oisd_and_hagezi": 87470,
-    "oisd_and_stevenblack": 19134,
-    "hagezi_and_stevenblack": 24561,
-    "all_three": 16708,
-    "only_oisd": 130220,
-    "only_hagezi": 140876,
-    "only_stevenblack": 49115,
-    "domains_in_several_sources": 97749
+    "oisd_and_hagezi": 96839,
+    "oisd_and_stevenblack": 22202,
+    "hagezi_and_stevenblack": 28439,
+    "all_three": 20252,
+    "only_oisd": 122297,
+    "only_hagezi": 141100,
+    "only_stevenblack": 51285,
+    "domains_in_several_sources": 106976
   },
   "allowlist_file": "allowlist.txt",
   "allowlist_entries": 0,
   "allowlist_removed": 0,
-  "collapsed_subdomains": 57950,
-  "total": 360010,
+  "collapsed_subdomains": 61206,
+  "total": 360452,
   "output_file": "blocklist.txt",
-  "output_bytes": 7117367
+  "output_bytes": 7134993
 }
